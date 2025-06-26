@@ -1,0 +1,31 @@
+name: instagramclone
+description: Clone de Instagram focado em compra e venda de imóveis.
+# …
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'     # intervalo seguro p/ Dart 3
+  flutter: '>=3.22.0'       # (opcional) garante Flutter 3.22+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Firebase
+  firebase_core: ^3.0.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.4.7
+  firebase_auth: ^5.0.0
+
+  # Upload/preview de vídeo
+  video_player: ^2.5.1
+
+  # Gerenciamento de estado
+  flutter_riverpod: ^2.5.1
+
+  # Agora
+  #agora_rtc_engine: ^6.2.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  build_runner: any

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "320579321498",
+    "project_id": "instaclone-a55ab",
+    "storage_bucket": "instaclone-a55ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320579321498:android:ae7819b263e72322446923",
+        "android_client_info": {
+          "package_name": "br.com.izzi.insta_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320579321498-60vvu2rr18voc9fisjbv3cbdpb8h4n5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0IKvDJ8ofoZR0jJGDGjkCO58ayasehKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320579321498-60vvu2rr18voc9fisjbv3cbdpb8h4n5g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "320579321498-inptniopji6nigs6t6r9n5rpk8dj2ltc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.izzi.instaClone"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320579321498:android:a8f3f25253f390e7446923",
+        "android_client_info": {
+          "package_name": "com.example.instagramclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320579321498-60vvu2rr18voc9fisjbv3cbdpb8h4n5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0IKvDJ8ofoZR0jJGDGjkCO58ayasehKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320579321498-60vvu2rr18voc9fisjbv3cbdpb8h4n5g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "320579321498-inptniopji6nigs6t6r9n5rpk8dj2ltc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.izzi.instaClone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
