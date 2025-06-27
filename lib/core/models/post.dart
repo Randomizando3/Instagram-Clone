@@ -3,12 +3,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class Post {
   final String id;
   final String authorId;
-  final String mediaUrl;
+  final String mediaUrl;             // URL da imagem / vídeo
   final String description;
-  final double? price;
-  final bool? isRent;
-  final String? category;
+  final double? price;               // valor do imóvel (opcional)
+  final bool? isRent;                // true = locação, false = venda
+  final String? category;            // “Apartamento”, “Casa”, etc.
   final DateTime createdAt;
+
+  // Likes
+  final int likes;
+  final List<String> likedBy;        // uids que curtiram
 
   Post({
     required this.id,
@@ -18,8 +22,13 @@ class Post {
     this.price,
     this.isRent,
     this.category,
+    this.likes = 0,
+    List<String>? likedBy,
     DateTime? createdAt,
-  }) : createdAt = createdAt ?? DateTime.now();
+  })  : likedBy = likedBy ?? const [],
+        createdAt = createdAt ?? DateTime.now();
+
+  // ---------- Firestore helpers ----------
 
   factory Post.fromDoc(DocumentSnapshot<Map<String, dynamic>> doc) {
     final d = doc.data()!;
@@ -31,6 +40,8 @@ class Post {
       price: (d['price'] as num?)?.toDouble(),
       isRent: d['isRent'],
       category: d['category'],
+      likes: d['likes'] ?? 0,
+      likedBy: List<String>.from(d['likedBy'] ?? []),
       createdAt: (d['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
     );
   }
@@ -42,6 +53,8 @@ class Post {
     'price': price,
     'isRent': isRent,
     'category': category,
+    'likes': likes,
+    'likedBy': likedBy,
     'createdAt': Timestamp.fromDate(createdAt),
   };
 }
